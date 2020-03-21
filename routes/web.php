@@ -17,16 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    return 'Hello laravel 7';
-});
-
-Route::get('/hello/world', function () {
-    return 'Hello laravel 7';
-});
-
-Route::get('/hello/world/haha', function () {
-    return 'Hello laravel 7';
-});
+Route::get('/article', '/articles', 'ArticleController@index');
 
 
